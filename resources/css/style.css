@@ -12,12 +12,24 @@ body {
   margin: 0 auto;
 }
 
-  /*  */
+  /* banner and nav */
+
+  .banner {
+     background-image: url("../images/glasses-bg.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 31rem;
+     display: flex;
+     flex-wrap: wrap;
+  }
+
 nav {
   background-color: cadetblue;
   color: white;
   align-items: center;
   top: 1rem;
+  height: 3rem;
 }
 nav ul {
   padding-top: 1rem;
@@ -45,28 +57,23 @@ nav img {
 
   /*  */
 
-.banner {
-   background-image: url("../images/glasses-bg.png");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   height: 31rem;
-   top: 0;
+
+.headline {
+  display: flex;
+  margin-right: -2rem;
+  justify-content: flex-end;
+  position: relative;
+
 }
 
-
-.banner h1 {
+.headline h1 {
   position: relative;
+  top: 14rem;
   background-color: white;
   padding: 1.5rem 5rem;
   font-size: 2rem;
-  top: 10rem;
   font-weight: bold;
   line-height: 1.2;
-  margin-right: -2rem;
-  display: flex;
-  justify-content: flex-end;
-
 }
 
 
