@@ -46,7 +46,7 @@ nav img {
   /*  */
 
 .banner {
-   background-image: url("../resources/images/glasses-bg.png");
+   background-image: url("../images/glasses-bg.png");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -64,6 +64,8 @@ nav img {
   top: 10rem;
   font-weight: bold;
   line-height: 1.2;
+  margin-right: -2rem;
+
 }
 
 
