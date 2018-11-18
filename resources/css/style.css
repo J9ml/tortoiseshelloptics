@@ -21,10 +21,7 @@ header {
      background-size: cover;
      height: 30rem;
      padding-top: 1rem;
-
   }
-
-
 
 nav {
   display: flex;
@@ -60,8 +57,6 @@ nav img {
 .mobile-menu {
   display: none;
 }
-
-
 
 
 header .flex {
@@ -133,11 +128,12 @@ header {
 background-position: 20%;
 }
 
-headline {
-  width: 100%
-  padding: 0 1rem;
+
+.headline {
+  width: 100%;
   text-align: center;
-  margin: 9rem auto 0 auto;
+  padding: 0 1rem;
+  margin: 12rem auto 0 auto;
 }
 
 h1 {
@@ -228,12 +224,19 @@ h1 {
 .info p {
   padding: 1rem;
   font-size: 0.77rem;
+  text-align: left;
+
 }
 
 .title {
   text-align: center;
   max-width: 100%;
 }
+
+.title {
+  margin-top: 4rem;
+}
+
 
 }
 
