@@ -38,7 +38,7 @@ nav {
 
 nav div {
   display: flex;
-  align-content: center;
+  align-items: center;
 }
 
 
@@ -57,7 +57,11 @@ nav img {
  margin-right: 1rem;
 }
 
-  /*  */
+.mobile-menu {
+  display: none;
+}
+
+
 
 
 header .flex {
@@ -83,16 +87,9 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
 
-.banner {
+header {
   height: 22rem;
-}
-
-nav {
-  top: 0;
-}
-
-nav #company {
-  flex: 1;
+  padding-top: 0;
 }
 
 nav.container {
@@ -104,15 +101,51 @@ max-width: 100%
   padding: 0.75rem 4rem;
   margin-top: 5rem;
   margin-right: 2rem;
-
 }
 
 h1 {
   font-size: 1.33rem;
-
 }
 
 }
+
+@media only screen and (max-width: 700px) {
+
+.menu ul {
+  display: none;
+}
+
+.menu ul.mobile-menu {
+  display: block;
+}
+
+}
+
+
+@media only screen and (max-width:560px) {
+
+header div span {
+  display: none;
+  height: 17rem;
+}
+
+header {
+background-position: 20%;
+}
+
+headline {
+  width: 100%
+  padding: 0 1rem;
+  text-align: center;
+  margin: 9rem auto 0 auto;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+}
+
 
   /* services */
 
@@ -165,7 +198,17 @@ h1 {
   padding-top: 1rem;
 }
 
+@media only screen and (max-width:560px) {
 
+.service {
+  height: auto;
+  margin: 1.54rem;
+  font-size: .77rem;
+
+}
+
+
+}
 
   /* footer */
 
