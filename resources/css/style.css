@@ -14,76 +14,105 @@ body {
 
   /* banner and nav */
 
-  .banner {
+header {
      background-image: url("../images/glasses-bg.png");
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
-     height: 31rem;
-     display: flex;
-     flex-wrap: wrap;
+     height: 30rem;
+     padding-top: 1rem;
+
   }
 
+
+
 nav {
+  display: flex;
   background-color: cadetblue;
   color: white;
   align-items: center;
-  top: 1rem;
+  justify-content: space-between;
   height: 3rem;
-  width: 960px;
+
 }
 
-nav img {
-  height: 1.5rem;
+nav div {
+  display: flex;
+  align-content: center;
 }
 
-nav ul {
+
+nav li {
+  display: inline;
+  list-style: none;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  list-style: none;
-  font-size: 1rem;
-  justify-content: space-between;
-  display: flex;
-  flex-flow: 1 wrap;
-}
-
-
-
-li {
   padding-right: 2rem;
+}
 
-}
-nav #company {
-  flex: 2;
-  margin-right: 0;
-}
 
 nav img {
  height: 1.5rem;
- padding-right: 1rem;
+ margin-left: 2rem;
+ margin-right: 1rem;
 }
 
   /*  */
 
 
-.headline {
+header .flex {
   display: flex;
-  margin-right: -2rem;
   justify-content: flex-end;
-  position: relative;
 
 }
-
-.headline h1 {
-  position: relative;
-  top: 14rem;
-  background-color: white;
+.headline {
+  display: inline-block;
   padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: white;
+}
+
+h1 {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
+
 }
 
+
+@media only screen and (max-width: 1024px) {
+
+.banner {
+  height: 22rem;
+}
+
+nav {
+  top: 0;
+}
+
+nav #company {
+  flex: 1;
+}
+
+nav.container {
+max-width: 100%
+
+}
+
+.headline {
+  padding: 0.75rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+
+}
+
+h1 {
+  font-size: 1.33rem;
+
+}
+
+}
 
   /* services */
 
@@ -92,6 +121,7 @@ nav img {
     justify-content: center;
     margin-top: 3rem;
   }
+
   .service {
     display: flex;
     flex-direction: column;
